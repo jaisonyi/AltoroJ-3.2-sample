@@ -4,21 +4,24 @@ import java.sql.SQLException;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import javax.servlet.http.HttpServletRequest;
+
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+
 import org.apache.wink.json4j.JSONException;
 import org.apache.wink.json4j.JSONObject;
+
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
+
 import com.ibm.security.appscan.altoromutual.model.Account;
 import com.ibm.security.appscan.altoromutual.model.Transaction;
 import com.ibm.security.appscan.altoromutual.model.User;
 import com.ibm.security.appscan.altoromutual.util.DBUtil;
 import com.ibm.security.appscan.altoromutual.util.OperationsUtil;
-
 
 @Path("/account")
 public class AccountAPI extends AltoroAPI {
