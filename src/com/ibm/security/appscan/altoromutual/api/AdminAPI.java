@@ -14,16 +14,19 @@ import org.apache.wink.json4j.*;
 import com.ibm.security.appscan.altoromutual.util.DBUtil;
 import com.ibm.security.appscan.altoromutual.util.ServletUtil;
 
+
 @Path("/admin")
 public class AdminAPI extends AltoroAPI{
 	
+
 	@POST
 	@Path("/changePassword")
 	public Response changePassword(String bodyJSON, @Context HttpServletRequest request) throws IOException{
 		JSONObject bodyJson= new JSONObject();
 		
 		//Don't really care if the user is admin or not - I think that's how it works in AltoroJ
-				
+	
+		
 		//Convert request to JSON
 		String username;
 		String password1;
