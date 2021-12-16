@@ -45,6 +45,7 @@ public class AdminFilter implements Filter {
 		super();
 	}
 
+	
 	/* (non-Java-doc)
 	 * @see javax.servlet.Filter#init(FilterConfig arg0)
 	 */
@@ -52,6 +53,8 @@ public class AdminFilter implements Filter {
 		// do nothing
 	}
 
+	
+	
 	/* (non-Java-doc)
 	 * @see javax.servlet.Filter#doFilter(ServletRequest arg0, ServletResponse arg1, FilterChain arg2)
 	 */
@@ -80,6 +83,8 @@ public class AdminFilter implements Filter {
 		}
 	}
 
+	
+	
 	/* (non-Java-doc)
 	 * @see javax.servlet.Filter#destroy()
 	 */
